@@ -1,3 +1,10 @@
+## I'm a junior, I'm just experiencing Frontend. I'm sharing it to give you an idea. It's definitely not the final product. Have a good day. 
+
+
+## Example view
+<img src="./assets/record.gif" alt="Shadcn multiselect example">
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
