@@ -1,3 +1,10 @@
+## I'm a junior, I'm just experiencing Frontend. I'm sharing it to give you an idea. It's definitely not the final product. Have a good day. 
+
+
+## Example view
+![image](https://github.com/user-attachments/assets/1067f8cb-dc76-41eb-a5f5-60cd8487366d)
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
