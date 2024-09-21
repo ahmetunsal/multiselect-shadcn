@@ -44,7 +44,7 @@ const MultiSelect = (props: {
           <Input
             required={props.required}
             className="w-full text-white text-start hover:cursor-pointer"
-            placeholder={props.placeholder}
+            placeholder={props.placeholder || ""}
             value={selectedOptions
               .map((value) => props.options.find((option) => option.value === value)?.label || "")
               .join(", ")}
