@@ -1,7 +1,6 @@
 "use client";
 
 import MultiSelect from "@/components/multi-select";
-import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Home() {
@@ -34,8 +33,8 @@ export default function Home() {
           contentClass="w-[95vw] md:!w-96"
         />
         <p className="w-1/2 mt-10">
-          I'm a junior, I'm just experiencing Frontend. I'm sharing it to give
-          you an idea. It's definitely not the final product. Have a good day.
+          I&apos;m a junior, I&apos;m just experiencing Frontend. I&apos;m sharing it to give
+          you an idea. It&apos;s definitely not the final product. Have a good day.
         </p>
       </div>
     </div>
