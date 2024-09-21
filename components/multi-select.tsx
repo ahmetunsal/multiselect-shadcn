@@ -10,20 +10,30 @@ import {
 
 type Checked = DropdownMenuCheckboxItemProps["checked"];
 
-const MultiSelect = (props: {
-  options: { value: string; label: string, disabled?: boolean }[];
+interface MultiSelectProps {
+  options: { value: string; label: string; disabled?: boolean }[];
   selectedOptions: string[];
   placeholder: string;
-  onChange: (selectedOptions: string[]) => void; // Callback fonksiyonu
-  className?: string; 
+  onChange: (selectedOptions: string[]) => void;
+  className?: string;
   contentClass?: string;
-  required?: boolean | false;
+  required?: boolean;
+}
+
+const MultiSelect: React.FC<MultiSelectProps> = ({
+  options,
+  selectedOptions: initialSelectedOptions,
+  placeholder,
+  onChange,
+  className = "",
+  contentClass = "",
+  required = false,
 }) => {
-  const [selectedOptions, setSelectedOptions] = useState<string[]>(props.selectedOptions);
+  const [selectedOptions, setSelectedOptions] = useState<string[]>(initialSelectedOptions);
 
   useEffect(() => {
-    setSelectedOptions(props.selectedOptions);
-  }, [props.selectedOptions]);
+    setSelectedOptions(initialSelectedOptions);
+  }, [initialSelectedOptions]);
 
   const handleCheckedChange = (optionValue: string, checked: Checked) => {
     const updatedSelectedOptions = checked
@@ -31,29 +41,29 @@ const MultiSelect = (props: {
       : selectedOptions.filter((value) => value !== optionValue);
 
     setSelectedOptions(updatedSelectedOptions);
-    props.onChange(updatedSelectedOptions); // Callback çağrısı
+    onChange(updatedSelectedOptions); // Callback çağrısı
   };
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
         asChild
-        className={`flex justify-between items-center hover:cursor-pointer ${props.className}`}
+        className={`flex justify-between items-center hover:cursor-pointer ${className}`}
       >
         <div className="flex justify-between items-center text-white">
           <Input
-            required={props.required}
+            required={required}
             className="w-full text-white text-start hover:cursor-pointer"
-            placeholder={props.placeholder || ""}
+            placeholder={placeholder || ""}
             value={selectedOptions
-              .map((value) => props.options.find((option) => option.value === value)?.label || "")
+              .map((value) => options.find((option) => option.value === value)?.label || "")
               .join(", ")}
             readOnly
           />
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className={`w-[95vw] xl:w-48 lg:w-96 dark ${props.contentClass}`}>
-        {props.options.map((option) => (
+      <DropdownMenuContent className={`w-[95vw] xl:w-48 lg:w-96 dark ${contentClass}`}>
+        {options.map((option) => (
           <DropdownMenuCheckboxItem
             className="w-full"
             key={option.value}
