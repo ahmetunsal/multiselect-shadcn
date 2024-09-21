@@ -2,7 +2,7 @@
 
 
 ## Example view
-![image](https://github.com/user-attachments/assets/1067f8cb-dc76-41eb-a5f5-60cd8487366d)
+<img src="./assets/record.gif" alt="Shadcn multiselect example">
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
