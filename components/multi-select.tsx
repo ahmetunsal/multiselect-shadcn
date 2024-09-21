@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu";
-import { Input } from "./ui/input";
+import { Input } from "@/components/ui/input";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -59,7 +59,7 @@ const MultiSelect = (props: {
             key={option.value}
             disabled={option.disabled}
             checked={selectedOptions.includes(option.value)}
-            onCheckedChange={(checked: any) => handleCheckedChange(option.value, checked)}
+            onCheckedChange={(checked: Checked) => handleCheckedChange(option.value, checked)}
           >
             {option.label}
           </DropdownMenuCheckboxItem>
