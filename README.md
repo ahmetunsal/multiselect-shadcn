@@ -1,43 +1,46 @@
-## I'm a junior, I'm just experiencing Frontend. I'm sharing it to give you an idea. It's definitely not the final product. Have a good day. 
+# 🧩 Multiselect Component for Shadcn/UI
 
+A reusable, type-safe multiselect component built as an extension for **Shadcn/UI**. This project is a deep dive into component-driven development using **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
 ## Example view
 <img src="./assets/record.gif" alt="Shadcn multiselect example">
 
+## 🎯 Project Purpose
+The goal of this project was to create a flexible and accessible multiselect input that seamlessly integrates with the Shadcn/UI ecosystem. It focuses on mastering **TypeScript interfaces** and **state management** in complex UI components.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## ✨ Features (Core Intent)
+- **Shadcn/UI Integration:** Designed to match the aesthetic and functional patterns of Shadcn/UI.
+- **Type-Safe:** Heavily utilizes TypeScript for robust props and event handling.
+- **Responsive Design:** Fully styled with Tailwind CSS for various screen sizes.
+- **Searchable:** Filter through large lists of options efficiently.
 
-## Getting Started
+## 🛠️ Tech Stack
+- **Framework:** [Next.js 15](https://nextjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Components:** [Shadcn/UI](https://ui.shadcn.com/) & [Radix UI](https://www.radix-ui.com/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
 
-First, run the development server:
+## 🚧 Current Status & Learning Journey
+As a **Junior Developer**, I am using this project to experiment with complex UI patterns. 
+- **Known Issues:** The state synchronization during rapid selection is currently being optimized.
+- **Next Steps:** Improving keyboard navigation (WAI-ARIA compliance) to meet high accessibility standards.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Getting Started
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone & Install:**
+   ```bash
+   git clone [https://github.com/ahmetunsal/multiselect-shadcn.git](https://github.com/ahmetunsal/multiselect-shadcn.git)
+   npm install
+   ```
+2. Run
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤝 Let's Connect
+I'm always open to feedback and collaboration to improve my code!
+- Portfolio: unsalahmet.com
+- Contact: contact.unsalahmet@gmail.com
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
