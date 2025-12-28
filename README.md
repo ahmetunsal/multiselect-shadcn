@@ -29,7 +29,7 @@ As a **Junior Developer**, I am using this project to experiment with complex UI
 
 1. **Clone & Install:**
    ```bash
-   git clone [https://github.com/ahmetunsal/multiselect-shadcn.git](https://github.com/ahmetunsal/multiselect-shadcn.git)
+   git clone https://github.com/ahmetunsal/multiselect-shadcn.git
    npm install
    ```
 2. Run
